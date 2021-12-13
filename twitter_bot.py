@@ -12,8 +12,9 @@ def twitter_api():
     CONSUMER_SECRET = "YOUR CONSUMER SECRET KEY HERE"
     ACCESS_TOKEN = "YOUR ACCESS TOKEN HERE"
     ACCESS_TOKEN_SECRET = "YOUR ACCESS TOKEN HERE"
-    twitter = Twython(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-    return twitter
+    return Twython(
+        CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET
+    )
 
 
 def save_last_tweet_id(tweet_id):
